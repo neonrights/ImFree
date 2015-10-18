@@ -39,7 +39,7 @@ public class MainActivity extends AppCompatActivity {
         availableFriends = updateFriendsList();
 
         friendsList = (ListView) findViewById(R.id.available_friends_list);
-        friendsAdapter = new ArrayAdapter<>(getApplicationContext(), android.R.layout.simple_expandable_list_item_1, availableFriends);
+        friendsAdapter = new ArrayAdapter<>(getApplicationContext(), R.layout.friends_list_layout, R.id.friend_list_item, availableFriends);
         friendsList.setAdapter(friendsAdapter);
 
         if (availableFriends.isEmpty()) {
@@ -103,5 +103,10 @@ public class MainActivity extends AppCompatActivity {
             updatedFriends.add("fucking Sean " + c.get(Calendar.HOUR));
         }
         return updatedFriends;
+    }
+
+    // TODO updates how much time each person has left
+    public void updateTime() {
+        // dunno if void is needed
     }
 }
