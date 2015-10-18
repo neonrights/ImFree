@@ -22,7 +22,8 @@
         android:drawSelectorOnTop="false"
         android:layout_below="@+id/test_button"
         android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true" />
+        android:layout_alignParentStart="true"
+        android:visibility="visible"/>
 
     <Button
         android:layout_width="wrap_content"
@@ -33,5 +34,30 @@
         android:layout_alignParentStart="true"
         android:layout_alignRight="@+id/available_friends_list"
         android:layout_alignEnd="@+id/available_friends_list" />
+
+    <ImageView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/sad_panda"
+        android:src="@drawable/sad_panda"
+        android:visibility="invisible"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="You have no friends. :("
+        android:id="@+id/loser_text"
+        android:typeface="serif"
+        android:textStyle="bold"
+        android:visibility="invisible"
+        android:layout_alignBottom="@+id/sad_panda"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="54dp" />
 
 </RelativeLayout>
