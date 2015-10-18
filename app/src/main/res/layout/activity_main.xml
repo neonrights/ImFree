@@ -18,36 +18,19 @@
             android:layout_width="fill_parent"
             android:layout_height="?attr/actionBarSize"
             android:background="?attr/colorPrimary"
-            app:popupTheme="@style/AppTheme.PopupOverlay">
-
-            <TextView
-                android:id="@+id/open_friend_number"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="5"
-                android:textColor="@color/colorAccent"
-                android:textSize="45sp"/>
-
-            <ImageButton
-                android:id="@+id/friends_open_button"
-                android:layout_width="50dp"
-                android:layout_height="50dp"
-                android:src="@drawable/friends"
-                android:background="?attr/colorPrimary"
-                android:layout_margin="0dp"/>
-
-            <ImageButton
-                android:id="@+id/settings_button"
-                android:layout_width="50dp"
-                android:layout_height="50dp"
-                android:src="@drawable/settings"
-                android:background="?attr/colorPrimary"
-                android:layout_marginLeft="250dp"/>
-
-        </android.support.v7.widget.Toolbar>
+            app:popupTheme="@style/AppTheme.PopupOverlay"/>
 
     </android.support.design.widget.AppBarLayout>
 
     <include layout="@layout/content_main" />
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/fab"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|end"
+        android:layout_margin="@dimen/fab_margin"
+        />
+
 
 </android.support.design.widget.CoordinatorLayout>

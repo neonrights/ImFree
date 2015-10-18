@@ -13,26 +13,31 @@
     tools:showIn="@layout/activity_main"
     tools:context=".MainActivity">
 
-    <Button
-        android:layout_width="200dp"
-        android:layout_height="wrap_content"
-        android:text="I'm Free"
-        android:id="@+id/im_free_button"
-        android:layout_marginTop="110dp"
-        android:layout_alignParentTop="true"
-        android:layout_centerHorizontal="true" />
+    <ListView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:id="@+id/available_friends_list"
+        android:divider="#000000"
+        android:dividerHeight="1dp"
+        android:drawSelectorOnTop="false"
+        android:layout_below="@+id/test_button"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
 
-    <EditText
+    <TextView
+        android:id="@+id/friend_list_item"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:textColor="#000000"/>
+
+    <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:inputType="textMultiLine"
-        android:ems="10"
-        android:id="@+id/i_got_weed"
-        android:layout_below="@+id/im_free_button"
-        android:layout_alignLeft="@+id/im_free_button"
-        android:layout_alignStart="@+id/im_free_button"
-        android:layout_alignRight="@+id/im_free_button"
-        android:layout_alignEnd="@+id/im_free_button" />
-
+        android:id="@+id/test_button"
+        android:text="REFRESH"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignRight="@+id/available_friends_list"
+        android:layout_alignEnd="@+id/available_friends_list" />
 
 </RelativeLayout>
